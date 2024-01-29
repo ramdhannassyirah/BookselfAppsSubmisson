@@ -138,9 +138,16 @@ function deleteBook(groupElement) {
 }
 
 function markAsRead(groupElement) {
-  // Move the book to the "Read" section
   const readgroup = document.querySelector(".books_read");
-  readgroup.appendChild(groupElement);
+  const unreadgroup = document.querySelector(".books_unread");
+
+  const success = groupElement.classList.toggle("read");
+
+  if (success) {
+    readgroup.appendChild(groupElement);
+  } else {
+    unreadgroup.appendChild(groupElement);
+  }
 
   // Update the book status in localStorage
   updateBookStatusInStorage(groupElement.dataset.id, true);
