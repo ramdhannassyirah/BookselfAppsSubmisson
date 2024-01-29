@@ -106,7 +106,6 @@ button.btn:focus {
 .books_read {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .books_unread h2 {
@@ -156,4 +155,22 @@ button.btn:focus {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+  .book {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .group_book {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 }

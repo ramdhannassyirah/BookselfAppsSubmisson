@@ -75,7 +75,7 @@ function addBook() {
   const yearInput = document.getElementById("year");
   const checkboxInput = document.getElementById("sudahBaca");
 
-  const title = titleInput.value;
+  const title = titleInput.value.toUpperCase();
   const author = authorInput.value;
   const year = parseInt(yearInput.value);
   const isComplete = checkboxInput.checked;
@@ -133,6 +133,7 @@ function confirmDelete(groupElement) {
 function deleteBook(groupElement) {
   // Remove the book from the view
   groupElement.remove();
+
   // Remove the book from localStorage
   removeBookFromStorage(groupElement.dataset.id);
 }
@@ -162,7 +163,7 @@ function saveBookToStorage(book) {
 function removeBookFromStorage(bookId) {
   let books = JSON.parse(localStorage.getItem("books")) || [];
   books = books.filter((book) => book.id !== bookId);
-  localStorage.setItem("books", JSON.stringify(books));
+  localStorage.removeItem("books", JSON.stringify(books));
 }
 
 function updateBookStatusInStorage(bookId, isComplete) {
@@ -173,4 +174,8 @@ function updateBookStatusInStorage(bookId, isComplete) {
     }
   });
   localStorage.setItem("books", JSON.stringify(books));
+}
+
+function clearBooks() {
+  localStorage.removeItem("books");
 }
