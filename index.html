@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookself Apps</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Bookself Apps</h1>
+    </nav>
+    <main>
+      <div class="tambahBuku">
+        <h1>Masukan Buku Baru</h1>
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <input type="text" name="author" id="author" placeholder="Author" />
+        <input type="text" name="year" id="year" placeholder="Year" />
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            name="sudahBaca"
+            id="sudahBaca"
+            value="sudahBaca"
+          /><label for="sudahBaca">Sudah Dibaca</label>
+        </div>
+
+        <button type="submit" class="btn">Add Book</button>
+      </div>
+
+      <div class="book">
+        <section class="books_unread">
+          <h2>Buku Belum Di Baca</h2>
+        </section>
+
+        <section class="books_read">
+          <h2>Buku Sudah Di Baca</h2>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

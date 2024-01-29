@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efecec;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  padding: 12px 0;
+}
+
+nav h1 {
+  font-family: "Single Day", cursive;
+}
+
+.tambahBuku h1 {
+  font-family: "Single Day", cursive;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tambahBuku {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #0c2d57;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  color: #0c2d57;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+}
+
+.book {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+
+button.btn {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  color: #efecec;
+  background-color: #0c2d57;
+}
+
+button.btn:hover {
+  cursor: pointer;
+  background-color: #2561af;
+}
+
+button.btn:focus {
+  border: 100px;
+}
+
+.books_read {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.books_unread h2 {
+  font-family: "Single Day", cursive;
+  color: #0c2d57;
+}
+.books_read h2 {
+  font-family: "Single Day", cursive;
+  color: #fc6736;
+}
+
+.books_unread button {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  color: #efecec;
+  background-color: #0c2d57;
+}
+
+.books_unread button:hover {
+  cursor: pointer;
+  background-color: #2561af;
+}
+
+.books_read button {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.75);
+  color: #efecec;
+  background-color: #fc6736;
+}
+
+.books_read button:hover {
+  cursor: pointer;
+  background-color: #f97d53;
+}
+
+.group_book {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
