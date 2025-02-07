@@ -34,7 +34,7 @@ BookSelft adalah aplikasi manajemen buku sederhana berbasis HTML, CSS, dan JavaS
 
 ### 1️⃣ Clone Repository
 ```sh
-git clone https://github.com/your-username/bookselft-app.git
+git clone https://github.com/ramdhannassyirah/BookselfAppsSubmisson.git
 cd bookselft-app
 ```
 
